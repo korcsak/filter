@@ -1,0 +1,16 @@
+# Example comment
+
+^adse?rv(er?|ice)?s?[0-9]*[_.-]
+
+ads.*
+
+*.outbrain.com # Inline comment
+*.taboola.com
+
+*.lan
+
+*tracker*
+
+amazon-adsystem.com
+
+malware.com.co 
