@@ -48,7 +48,7 @@ func (f *Filter) ServeDNS(ctx context.Context, w dns.ResponseWriter, r *dns.Msg)
 
 		msg := createReply(r, f.ttl)
 		w.WriteMsg(msg) //nolint
-		return dns.RcodeSuccess, nil
+		return dns.RcodeNameError, nil
 	}
 
 	if f.uncloak {
