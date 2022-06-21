@@ -1,3 +1,4 @@
+module github.com/korcsak/filter
 
 go 1.17
 
