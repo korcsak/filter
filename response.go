@@ -12,10 +12,10 @@ func createReply(r *dns.Msg, ttl uint32) *dns.Msg {
 
 	switch state.QType() {
 	case dns.TypeA:
-		return newAResponse(r, ttl)
+		return newNXDomainResponse(r, ttl)
 
 	case dns.TypeAAAA:
-		return newAAAAResponse(r, ttl)
+		return newNXDomainResponse(r, ttl)
 
 	default:
 		return newNXDomainResponse(r, ttl)
